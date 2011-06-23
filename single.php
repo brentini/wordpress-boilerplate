@@ -14,7 +14,7 @@
 				
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
 			
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+				<?php include (TEMPLATEPATH . '/inc/_meta.php' ); ?>
 
 			</div>
 			
