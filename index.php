@@ -13,7 +13,6 @@
 			</div>
 
 			<?php include (TEMPLATEPATH . '/inc/_postmetadata.php' ); ?>
-			
 
 		</article>
 
