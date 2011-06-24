@@ -57,12 +57,15 @@ body {font:13px Helmet,Freesans,sans-serif}
 body,select,input,textarea {color:#333}
 a {color:#03f}
 a:hover {color:#69f}
-::-moz-selection {background:#fcd700;color:#fff;text-shadow:none}
-::selection {background:#fcd700;color:#fff;text-shadow:none}
 a:link {-webkit-tap-highlight-color:#fcd700}
 ins {background-color:#fcd700;color:#000;text-decoration:none}
 mark {background-color:#fcd700;color:#000;font-style:italic;font-weight:bold}
+/***********/
 
+body {line-height:20px;font-size:13px;}
+a {text-decoration:none;}
+
+/***********/
 
 html, body {height:100%;}
 #wrapper, #footer {width:940px;margin:0 auto}
@@ -72,10 +75,12 @@ html, body {height:100%;}
 /*Opera Fix*/
 body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;/}
 
-.post {}
-.entry-content {}
-.entry-content a {}
-.entry-content a:hover {}
+
+#header {padding:40px 0;}
+	.post {margin-bottom:40px;}
+	.entry-content {}
+	.entry-content a {}
+	.entry-content a:hover {}
 #meta {}
 .postmetadata {}
 #sidebar {}
@@ -84,7 +89,7 @@ body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;/}
 	.prev-posts {}
 #searchform {}
 #s {}
-#searchsubmt {}
+#searchsubmit {}
 ol.commentlist {list-style:none}
 ol.commentlist li {}
 ol.commentlist li.alt {}
@@ -125,6 +130,11 @@ ol.commentlist li.parent {border-left:5px solid #111}
 ol.commentlist li.thread-alt {}
 ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}
+
+.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {}

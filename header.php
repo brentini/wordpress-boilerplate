@@ -65,7 +65,7 @@
 
 <body <?php body_class(); ?>>
 
-	<div id="wrapper">
+	<div id="wrapper" class="clearfix">
 
 		<header id="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
