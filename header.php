@@ -64,7 +64,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+
 	<div id="wrapper">
 
 		<header id="header">
