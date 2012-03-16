@@ -58,6 +58,7 @@ a:hover {color:#69f}
 a:link {-webkit-tap-highlight-color:#fcd700}
 ins {background-color:#fcd700;color:#000;text-decoration:none}
 mark {background-color:#fcd700;color:#000;font-style:italic;font-weight:bold}
+
 /***********/
 
 body {line-height:20px;font-size:13px;}
@@ -81,13 +82,17 @@ body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;/}
 	.entry-content a:hover {}
 #meta {}
 .postmetadata {}
+
 #sidebar {}
 	.pagination {}
 	.next-posts {}
 	.prev-posts {}
+
+
 #searchform {}
 #s {}
 #searchsubmit {}
+
 ol.commentlist {list-style:none}
 ol.commentlist li {}
 ol.commentlist li.alt {}
