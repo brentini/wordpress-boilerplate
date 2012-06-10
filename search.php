@@ -8,19 +8,7 @@
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-				<h2><?php the_title(); ?></h2>
-
-				<?php include (TEMPLATEPATH . '/inc/_meta.php' ); ?>
-
-				<div class="entry">
-
-					<?php the_excerpt(); ?>
-
-				</div>
-
-			</article>
+			<?php include (TEMPLATEPATH . '/inc/_post.php' ); ?>
 
 		<?php endwhile; ?>
 

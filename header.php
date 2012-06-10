@@ -1,15 +1,7 @@
 <!DOCTYPE html>
-
-<!--[if lt IE 7 ]> <html class="ie ie6" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
-
+<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<?php if (is_search()) { ?><meta name="robots" content="noindex, nofollow" /><?php } ?>
+	
 	<title><?php
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
@@ -28,7 +20,11 @@
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
 		   ?></title>
-	<meta name="title" content="<?php
+	
+	<meta charset="<?php bloginfo('charset'); ?>">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<?php if (is_search()) { ?><meta name="robots" content="noindex, nofollow" /><?php } ?>
+<meta name="title" content="<?php
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
@@ -53,21 +49,20 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-	<?php wp_head(); ?>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+
+<?php wp_head(); ?>
 	
 </head>
 
 <body <?php body_class(); ?>>
 
-	<div id="wrapper" class="clearfix">
-
-		<header class="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
-		</header>
-		<section class="content">
+	<header class="header">
+		<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+		<div class="description"><?php bloginfo('description'); ?></div>
+	</header>
+	<section class="content">
