@@ -1,6 +1,5 @@
 		</section><!--close content-->
-	</div><!--close wrapper-->		
-	<footer id="footer" clas="source-org vcard copyright">
+	<footer class="footer">
 		<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
 	</footer>
 	<?php wp_footer(); ?>

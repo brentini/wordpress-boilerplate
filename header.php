@@ -48,10 +48,10 @@
 		   ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="google-site-verification" content="">
-	<meta name="author" content="Your Name Here">
+	<meta name="author" content="Dave Santos">
 	
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
-	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/_/img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
+	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
@@ -66,8 +66,8 @@
 
 	<div id="wrapper" class="clearfix">
 
-		<header id="header">
+		<header class="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 			<div class="description"><?php bloginfo('description'); ?></div>
 		</header>
-		<section id="content">
+		<section class="content">
